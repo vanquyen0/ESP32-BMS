@@ -1,5 +1,5 @@
 1. LXT
-2. 
+   
 ESP32 3V3 ──[4.7k]──┐
 
                     │
@@ -14,6 +14,7 @@ LXT dùng kiểu 1-wire/open-drain nên DATA nên có pull-up 4.7k lên 3.3V.
 2. XGT
 
 ESP32 3V3 ──[4.7k]──┐
+
                     │
 GPIO22 DATA ────────┴──── XGT DATA
 
@@ -22,6 +23,7 @@ ESP32 GND  ────────────── B-
 XGT cũng nên có pull-up 4.7k lên 3.3V trên đường DATA.
 ---------------------------------------------------------------------------------
 3. HIKOKI
+
 GPIO27 OUT      ───────── HIKOKI OUT
 
 
@@ -44,7 +46,9 @@ GPIO22 TX  ────────────── M18 RX / DATA IN
 
 GPIO27 RX  ◀───────────── M18 TX / DATA OUT
 
+
 ESP32 GND ─────────────── B-
+
 M18 dạng UART TX/RX nên thường không cần pull-up. Nếu muốn bảo vệ thêm:
 
 M18 TX ──[1k]── GPIO27 RX
