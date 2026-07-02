@@ -1,5 +1,7 @@
 1. LXT
+2. 
 ESP32 3V3 ──[4.7k]──┐
+
                     │
 GPIO22 DATA ────────┴──── LXT DATA
 
