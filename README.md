@@ -2,7 +2,7 @@
    
 ESP32 3V3 ──[4.7k]──┐
 
-                    │
+                    
 GPIO22 DATA ────────┴──── LXT DATA
 
 
@@ -15,7 +15,7 @@ LXT dùng kiểu 1-wire/open-drain nên DATA nên có pull-up 4.7k lên 3.3V.
 
 ESP32 3V3 ──[4.7k]──┐
 
-                    │
+                    
 GPIO22 DATA ────────┴──── XGT DATA
 
 
@@ -31,7 +31,8 @@ GPIO22 INV OUT  ───────── HIKOKI INV OUT
 
 
 ESP32 3V3 ──[10k]──┐
-                   │
+
+                   
 GPIO35 IN  ◀───────┴──── HIKOKI IN
 
 
