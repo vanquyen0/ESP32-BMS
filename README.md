@@ -42,6 +42,7 @@ IN là ESP32 đọc tín hiệu từ pin, nên thêm pull-up 10k lên 3.3V nếu
 GPIO35 chỉ input, dùng đúng cho chân IN.
 --------------------------------------------------------------------------------------
 4. Milwaukee M18
+   
 GPIO22 TX  ────────────── M18 RX / DATA IN
 
 
