@@ -3,6 +3,7 @@ ESP32 3V3 ──[4.7k]──┐
                     │
 GPIO22 DATA ────────┴──── LXT DATA
 
+
 GPIO27 ENABLE ─────────── LXT ENABLE
 
 ESP32 GND  ────────────── B-
@@ -14,17 +15,21 @@ ESP32 3V3 ──[4.7k]──┐
                     │
 GPIO22 DATA ────────┴──── XGT DATA
 
+
 ESP32 GND  ────────────── B-
 XGT cũng nên có pull-up 4.7k lên 3.3V trên đường DATA.
 ---------------------------------------------------------------------------------
 3. HIKOKI
 GPIO27 OUT      ───────── HIKOKI OUT
 
+
 GPIO22 INV OUT  ───────── HIKOKI INV OUT
+
 
 ESP32 3V3 ──[10k]──┐
                    │
 GPIO35 IN  ◀───────┴──── HIKOKI IN
+
 
 ESP32 GND ─────────────── B-
 OUT và INV OUT là ESP32 xuất tín hiệu, thường không cần pull-up.
@@ -33,6 +38,7 @@ GPIO35 chỉ input, dùng đúng cho chân IN.
 --------------------------------------------------------------------------------------
 4. Milwaukee M18
 GPIO22 TX  ────────────── M18 RX / DATA IN
+
 
 GPIO27 RX  ◀───────────── M18 TX / DATA OUT
 
